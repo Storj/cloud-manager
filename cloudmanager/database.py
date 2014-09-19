@@ -1,10 +1,10 @@
 import sqlite3
 import psycopg2
 import psycopg2.extras
-import urlparse
+import urllib.parse
 
 def connect(uri):
-    result = urlparse.urlparse(uri)
+    result = urllib.parse.urlparse(uri)
     username = result.username
     password = result.password
     database = result.path[1:]
