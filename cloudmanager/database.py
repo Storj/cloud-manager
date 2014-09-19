@@ -7,7 +7,7 @@ except ImportError:
     import urllib.parse as urlparse
 
 def connect(uri):
-    result = urllib.parse.urlparse(uri)
+    result = urlparse.urlparse(uri)
     username = result.username
     password = result.password
     database = result.path[1:]
