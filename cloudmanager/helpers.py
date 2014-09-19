@@ -13,7 +13,7 @@ def directory_size(start_path):
 def sha256(path):
     """Return the sha256 digest of a file."""
     h = hashlib.sha256()
-    with open(path) as f:
+    with open(path, 'rb') as f:
         for chunk in iter(lambda: f.read(8192), b''):
             h.update(chunk)
 
