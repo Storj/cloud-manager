@@ -11,7 +11,7 @@ in your system correctly.
 
 #### Using pip
 
-To install cloudmanager using pip, directly from github:
+Install cloudmanager using pip directly from github by running:
 
     sudo pip install git+https://github.com/Storj/cloud-manager
 
